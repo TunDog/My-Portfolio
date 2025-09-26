@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Black Steel — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="3" stroke="rgba(255,255,255,0.06)" stroke-width="1.2"/><path d="M6 16V8h6v8" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 12h6" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <!-- TODO: Change site title and subtitle to your brand/name -->
+          <div class="title">Project Portfolio</div>
+          <div class="subtitle">Front end • Designer</div>
+        </div>
+      </div>
+      <nav aria-label="main">
+        <button class="btn nav-trigger" data-target="about">About</button>
+        <button class="btn nav-trigger" data-target="projects">Projects</button>
+        <button class="btn nav-trigger" data-target="contact">Contact</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content card-lg">
+          <div class="intro-label">Hello — I'm</div>
+          <!-- TODO: Replace hero name -->
+          <h1>Al Dave Tundag</h1>
+          <!-- TODO: Replace hero lead/summary -->
+          <p class="lead">I'm an Introvert student that likes to create simple and clean website. I also enjoy editing, designing and coding </p>
+          <div class="button-row">
+            <button class="cta">View Work</button>
+            <button class="btn">Download CV</button>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <div class="avatar">
+            <div>
+              <!-- TODO: Replace profile card name and role -->
+              <img src="441485960_1486288928645461_6306820353618093182_n.jpg" alt="Your Name" class="profile-pic">
+              <h3 class="avatar-title">Al Dave Tundag</h3>
+              <div class="avatar-subtitle">Front-end Developer • Product Designer</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Info Panel (tabs) shown by nav clicks -->
+      <section class="info-panel" id="info-panel" hidden>
+        <div class="info-header">
+          <div class="info-title" id="info-title">About</div>
+          <button class="btn info-close" id="info-close" aria-label="Close">Close</button>
+        </div>
+
+        <div class="tab-content">
+          <!-- About Pane -->
+          <div class="tab-pane" data-pane="about">
+            <div class="about grid">
+              <div class="card">
+                <div class="section-header"><h2>About Me</h2></div>
+                <p class="text-muted">I am a passionate individual who enjoys learning and improving my skills when has the time. I can adopt quickly to new concepts when someone shares their knowledge effectively and also enjoy working with others, sharing ideas and improving myself through their experiences and practices.</p>
+                <h4 class="mt-12">Hobbies & Interests</h4>
+                <ul class="text-muted list-indent">
+                  <li>Photography</li>
+                  <li>Gaming</li>
+                  <li>Listening to Musics</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="section-header"><h2>Skills</h2></div>
+                <div class="skill"><div>HTML & CSS</div><div class="level">Intermediate</div></div>
+                <div class="skill"><div>PHP / MySQL</div><div class="level">Basic</div></div>
+                <div class="skill"><div>UI / Product Design</div><div class="level">Basic</div></div>
+                <div class="skill"><div>Photo/Video Editing</div><div class="level">Intermediate</div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Pane -->
+          <div class="tab-pane" data-pane="projects">
+            <div class="section-header"><h2>YouTube Projects</h2><div class="section-subtitle">My Youtube Videos</div></div>
+            <div class="grid projects-grid">
+              <article class="project-card">
+                <div class="video-thumb">
+                  <div class="video-frame">
+                    <video src="Ac08 A Week with my Life - Dave (720p, h264, youtube).mp4" autoplay muted loop playsinline></video>
+                  </div>
+                </div>
+                <h3 class="reset">Project One</h3>
+                <a href="https://youtu.be/7xQSZlkViWg">
+                <p class="text-muted reset">A Week with my Life -  <strong>Dave</strong>.</p></a>
+              </article>
+
+              <article class="project-card">
+                <div class="video-thumb">
+                  <div class="video-frame">
+                    <video src="Media Player 2025-09-26 19-36-32.mp4" autoplay muted loop playsinline></video>
+                  </div>
+                </div>
+                <h3 class="reset">Project Two</h3>
+                <a href="https://youtu.be/7xQSZlkViWg">
+                <p class="text-muted reset">Vlog #2 Current Hobbies - <strong>Dave</strong>.</p></a>
+              </article>
+            </div>
+
+            <div class="section-header mt-12"><h2>coding works</h2><div class="section-subtitle">Websites and activities</div></div>
+            <div class="grid projects-grid">
+              <article class="project-card">
+                <div class="project-thumb thumb-carousel">
+                  <img class="thumb-slide is-active" src="Photo Editing.png" alt="Editing Projects 1">
+                  <img class="thumb-slide" src="Video Editing.JPG" alt="Editing Projects 2">
+                </div>
+                <h3 class="reset">Photo & Video Editing</h3>
+                <p class="text-muted reset">Adobe Photoshope and Adobe premiere.</p>
+              </article>
+              <article class="project-card">
+                <div class="project-thumb thumb-carousel" aria-label="CRUD App UI">
+                  <img class="thumb-slide is-active" src="Purtier Home.png" alt="Website 1">
+                  <img class="thumb-slide" src="Purtier Register.png" alt="Website 2">
+                </div>
+                <h3 class="reset">Website Creation</h3>
+                <p class="text-muted reset">Purtier Website with php/mySQL.</p>
+              </article>
+              <article class="project-card">
+                <div class="project-thumb thumb-carousel" aria-label="Portfolio UI">
+                  <img class="thumb-slide is-active" src="before edit.jpg" alt="Photo Restoration 1">
+                  <img class="thumb-slide" src="after edit.jpg" alt="Photo Restoration 2">
+                </div>
+                <h3 class="reset">Photo Editing</h3>
+                <p class="text-muted reset">Image Restoration or Image Manipulation.</p>
+              </article>
+              <article class="project-card">
+                <div class="project-thumb thumb-carousel" aria-label="Mini Games UI">
+                  <img class="thumb-slide is-active" src="Student record in c++.png" alt="Mini game 1">
+                  <img class="thumb-slide" src="Simple Calcu.jpg" alt="Mini game 2">
+                </div>
+                <h3 class="reset">Basic Php & C++</h3>
+                <p class="text-muted reset">Student Recording & Simple Calculator</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Contact Pane -->
+          <div class="card card-pad">
+            <h3 class="reset-top">Get in touch</h3>
+            <p class="text-muted">Email: <strong>Aldavetundougie07@gmail.com</strong></p>
+            <p class="text-muted">Phone: <strong>+63 994 227 9363</strong></p>
+            <p class="text-muted">Location: Zamboanga City, Philippines</p>
+          <div class="tab-pane" data-pane="contact">
+            <div class="section-header"><h2>Contact</h2><div class="section-subtitle">Let's build something together</div></div>
+            <div class="contact-layout">
+              <div class="card card-pad" style="grid-column: 1 / -1;">
+                <h3 class="reset-top">Connect with me</h3>
+                <div class="social-list mt-12">
+                  <a class="social-item" href="https://www.facebook.com/jose.saavedra.969" target="_blank">
+                    <img class="social-icon" src="facebook.png" alt="Facebook icon">
+                    <span>Facebook</span>
+                  </a>
+                  <a class="social-item" href="https://www.instagram.com/el_dabidd/" target="_blank">
+                    <img class="social-icon" src="instagram.png" alt="Instagram icon">
+                    <span>Instagram</span>
+                  </a>
+                  <a class="social-item" href="https://github.com/TunDog" target="_blank">
+                    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#9aa6ae" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.1-.76.08-.75.08-.75 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.31 3.52 1 .11-.79.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.25-.12-.3-.54-1.51.12-3.14 0 0 1.01-.32 3.3 1.24a11.47 11.47 0 0 1 6 0c2.28-1.56 3.29-1.24 3.29-1.24.66 1.63.24 2.84.12 3.14.77.85 1.24 1.93 1.24 3.25 0 4.63-2.8 5.66-5.48 5.96.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.58A12 12 0 0 0 12 .5Z"/></svg>
+                    <span>GitHub</span>
+                  </a>
+                  <a class="social-item" href="https://youtube.com/Dave" target="_blank">
+                    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#9aa6ae" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.9 31.9 0 0 0 0 12a31.9 31.9 0 0 0 .6 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.3.6 9.3.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.9.6-5.8.6-5.8s-.1-3.9-.6-5.8ZM9.7 15.5V8.5l6.2 3.5-6.2 3.5Z"/></svg>
+                    <span>YouTube</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- TODO: Replace footer name/phrase if desired -->
+    <footer>© <span id="year"></span> Al Dave Tundag  · 3rd year BSIT Student</footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
